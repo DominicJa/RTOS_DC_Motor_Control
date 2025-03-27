@@ -18,7 +18,7 @@ The first phase focused on setting up the EduBase-V2 Trainer's onboard LCD displ
 
 ✅ LCD Display Output - Displayed real-time RPM using timing data from interrupts.
 
-(2) Implementing the RTOS for the first time
+**(2) Implementing the RTOS for the first time**
 
 The second phase introduced the RTOS given and based on the textbook Real-Time Operating Systems for ARM Cortex-M Microcontrollers by Jonathan W. Valvano.
 
@@ -38,7 +38,7 @@ User Thread Implementation – Three user threads were created:
 
 3️⃣ Additional Functionality Thread (implemented in later phases).
 
-(3) Adding User Input & Thread Synchronization
+**(3) Adding User Input & Thread Synchronization**
 
 This phase introduced user functionality, thread communication, and blocking mechanisms to the RTOS.
 
@@ -66,7 +66,7 @@ This phase introduced user functionality, thread communication, and blocking mec
 
   PWM was re-enabled only when the user increased the motor speed.
 
-(4) Implementing Priority Scheduling
+**(4) Implementing Priority Scheduling**
 
 🔹 Priority Levels Added – The TCB was modified to include a priority field, where a higher value indicates higher priority.
 
