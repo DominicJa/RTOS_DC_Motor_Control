@@ -8,7 +8,7 @@ The objective of this project was to adapt a rudimentary real-time operating sys
 
 🛠 Project Breakdown
 
-(1) Initial Setup & Motor Control
+**(1) Initial Setup & Motor Control**
 
 The first phase focused on setting up the EduBase-V2 Trainer's onboard LCD display and interfacing with the TivaC's PWM and timer peripherals:
 
