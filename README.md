@@ -1,42 +1,42 @@
 # RTOS_DC_Motor_Control
 
-📌 Description
+Description:
 
 This project was developed over the course of an academic semester as the main lab assignment for the senior-level Computer Engineering course EGEC 451: Real-Time Operating Systems for Embedded Systems.
 
 The objective of this project was to adapt a rudimentary real-time operating system (RTOS) to understand various RTOS concepts and mechanisms in embedded systems. The project started with a bare-bones RTOS, with each subsequent lab adding more functionality. The repository reflects this iterative development process, with separate entries corresponding to different stages of the project.
 
-🛠 Project Breakdown
+Project Breakdown:
 
 **(1) Initial Setup & Motor Control**
 
 The first phase focused on setting up the EduBase-V2 Trainer's onboard LCD display and interfacing with the TivaC's PWM and timer peripherals:
 
-✅ PWM Peripheral - USed to control the speed of the external DC motor.
+  PWM Peripheral - USed to control the speed of the external DC motor.
 
-✅ Timer Peripheral - Used for input caputre from the motor's encoder, allowing measurement of rotations per minute (RPM)
+  Timer Peripheral - Used for input caputre from the motor's encoder, allowing measurement of rotations per minute (RPM)
 
-✅ LCD Display Output - Displayed real-time RPM using timing data from interrupts.
+  LCD Display Output - Displayed real-time RPM using timing data from interrupts.
 
 **(2) Implementing the RTOS for the first time**
 
 The second phase introduced the RTOS given and based on the textbook Real-Time Operating Systems for ARM Cortex-M Microcontrollers by Jonathan W. Valvano.
 
-🔹 Testing & Initializing the RTOS – Implemented the given RTOS framework and verified its functionality.
+  Testing & Initializing the RTOS – Implemented the given RTOS framework and verified its functionality.
 
-🔹 Time-Slice Scheduling – Added a time-slice counter to the thread scheduler.
+  Time-Slice Scheduling – Added a time-slice counter to the thread scheduler.
 
-🔹 SPI & Seven-Segment Display Integration – Enabled real-time display of the time-slice counter onto the seven-segment display of the EduBase-V2.
+  SPI & Seven-Segment Display Integration – Enabled real-time display of the time-slice counter onto the seven-segment display of the EduBase-V2.
 
-🔹 Thread Control Block (TCB) Enhancements – Added support for thread identifiers, displayed on the seven-segment display.
+  Thread Control Block (TCB) Enhancements – Added support for thread identifiers, displayed on the seven-segment display.
 
 User Thread Implementation – Three user threads were created:
 
-1️⃣ Motor Speed Control Thread – Adjusted PWM to set motor speed.
+  Motor Speed Control Thread – Adjusted PWM to set motor speed.
 
-2️⃣ RPM Display Thread – Printed real-time motor RPM on the LCD.
+  RPM Display Thread – Printed real-time motor RPM on the LCD.
 
-3️⃣ Additional Functionality Thread (implemented in later phases).
+  Additional Functionality Thread (implemented in later phases).
 
 **(3) Adding User Input & Thread Synchronization**
 
@@ -86,7 +86,7 @@ Motor Control & RPM Display Threads - Assigned priority (1).
 
   This ensured that display updates and motor control adjustments were still executed, even in high-load scenarios.
 
-📄 Additional Resources
+Additional Resources:
 
 For more details, refer to the project lab reports and source code in this repository.
 
